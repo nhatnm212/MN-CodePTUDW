@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+</head>
+<body>
+    <h2> ĐĂNG KÝ TÀI KHOẢN</h2>
+    <form method="post" enctype="multipart/form-data">
+        Tài khoản: 
+        <input name="hoten"/>
+        <br><br>
+
+        Mật khẩu: 
+        <input type="password" name="matkhau"/>
+        <br><br> 
+
+        Quê quán: 
+        <select name="quequan">
+            <option value="tphcm">Thành phố Hồ Chí Minh</option>
+            <option value="hanoi">Hà Nội</option>
+        </select>
+        <br><br> 
+
+        Ngày sinh:
+        <input type="date"/>  
+        <br><br>
+
+        Chọn số may mắn (từ 1 đến 100): 
+        <input type="number" name="namsinh" min="0" max="100"/>
+        <br><br> 
+
+        Giới tính: 
+        <input type="radio" name="gioitinh" value="1" checked/>Nam
+        <input type="radio" name="gioitinh" value="2"/>Nữ
+        <br><br> 
+
+        Chèn file: 
+        <input type="file"/>
+        <br><br> 
+
+        <button>Đăng ký</button>
+    </form>
+</body>
+</html>

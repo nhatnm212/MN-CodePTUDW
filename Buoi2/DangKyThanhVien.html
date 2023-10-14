@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <style>
+        h2 {
+            color: firebrick; 
+            text-align: center;
+        }
+        .mytextbox {
+            color:darkorange; background-color:firebrick;
+            border: 1px solid #996633; width: 300px; 
+        }
+        .dobong {
+            box-shadow: 0 0 7px red;
+        }
+        .mytextbox:hover {
+            font-weight: bolder;
+        }
+        ::placeholder {
+            color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <h2>ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC</h2>
+    <form method="post" enctype="multipart/form-data" action="TrangXuLy.php">
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td>
+                    <input class="mytextbox dobong" type="text" name="txtHoTen" required placeholder="Vui lòng nhập họ tên"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td>
+                    <input class="mytextbox" type="text" name="txtUserName"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td>
+                    <input class="mytextbox" type="password" name="txtPass"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>Gõ lại mật khẩu</td>
+                <td>
+                    <input class="mytextbox" type="password" name="txtRepass"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td>
+                    <input type="radio" name="rdPhai" value="0" checked/>Nam 
+                    <input type="radio" name="rdPhai" value="1"/>Nữ 
+                    <input type="radio" name="rdPhai" value="-1"/>Khác 
+                </td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ</td>
+                <td>
+                    <input type="checkbox" name="chkAnh"/>Anh 
+                    <input type="checkbox" name="chkPhap"/>Pháp 
+                    <input type="checkbox" name="chkHoa"/>Hoa 
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select class="mytextbox">
+                        <option value="0">Bạn làm nghề gì</option> 
+                        <option value="1">Học sinh - Sinh viên</option> 
+                        <option value="2">Giáo viên</option> 
+                        <option value="3">Nhân viên</option> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Đăng ký</button>
+                    <button type="reset">Làm lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

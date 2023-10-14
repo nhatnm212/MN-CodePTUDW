@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo jQuery</title>
+</head>
+<body>
+    
+    <div>DIV 1</div>
+    <div>DIV 2</div>
+    <div>DIV 3</div>
+    <div>DIV 4</div>
+    <div>DIV 5</div>
+
+    <button class="mybtn" type="button">HELLO</button>
+
+    <button id="ChenDuLieu">Chèn</button>
+
+    <div id="ketQua"></div>
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Chèn html vào div ketQua khi click vào button ChenDuLieu 
+            $("#ChenDuLieu").click(function() {
+                $("#ketQua").html("<h3>Xin chào</h3>")
+            }); 
+            // Làm biến mất các div khi click vào 
+            $("div").click(function() {
+                $(this).hide(1500); 
+            }); 
+            // Gắn sự kiện click lên button .mybtn 
+            $(".mybtn").click(function() {
+                alert("Hello"); 
+            }); 
+        }); 
+    </script>
+
+</body>
+</html>
